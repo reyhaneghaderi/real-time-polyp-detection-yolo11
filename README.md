@@ -19,10 +19,10 @@ Saving results (annotated frames + output video in /report/)
    results = model.track(frame, persist=True, conf=0.8)
 # Quantitative Results
  Metric	Value	Interpretation
-Precision (P)	0.873	87.3% of detected objects are correct — high confidence predictions
-Recall (R)	0.847	84.7% of all real objects were detected
-mAP@0.5	0.894	Excellent spatial accuracy for object localization
-mAP@0.5–0.95	0.701	Strong generalization under strict IoU thresholds
-F1-Score (Optimal)	0.78 @ conf=0.64	Best balance between precision and recall
-Speed	~7.5 ms per frame	Real-time capability (>130 FPS)
+# Precision (P)	0.873	87.3% of detected objects are correct — high confidence predictions
+# Recall (R)	0.847	84.7% of all real objects were detected
+# mAP@0.5	0.894	Excellent spatial accuracy for object localization
+# mAP@0.5–0.95	0.701	Strong generalization under strict IoU thresholds
+# F1-Score (Optimal)	0.78 @ conf=0.64	Best balance between precision and recall
+# Speed	~7.5 ms per frame	Real-time capability (>130 FPS)
 
