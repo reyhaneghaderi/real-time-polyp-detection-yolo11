@@ -24,5 +24,27 @@ Saving results (annotated frames + output video in /report/)
 # mAP@0.5	0.894	Excellent spatial accuracy for object localization
 # mAP@0.5–0.95	0.701	Strong generalization under strict IoU thresholds
 # F1-Score (Optimal)	0.78 @ conf=0.64	Best balance between precision and recall
-# Speed	~7.5 ms per frame	Real-time capability (>130 FPS)
 
+These results demonstrate that even the lightweight YOLOv11-Nano (2.6 M params) achieves near-clinical accuracy while maintaining real-time speed — ideal for applications like endoscopic assistance or embedded vision systems.
+
+# Speed	~7.5 ms per frame	Real-time capability (>130 FPS)
+# Visual Analysis
+Confusion Matrices: High diagonal dominance, minor false positives
+PR and F1 Curves: Smooth trade-off, stable threshold at confidence ≈ 0.64
+Label Distribution: Polyps primarily centered and small — model robust to scale variance
+Tracked Output Video: Saved automatically in ./report/tracked_output_video.mp4
+
+# Clinical and Research Significance
+
+This project highlights how lightweight object detection models can assist in medical image interpretation.
+In a real-world setup, it could:
+Support endoscopic anomaly detection
+Assist radiologists in visual quality assurance
+Enable explainable AI in healthcare imaging pipelines
+The architecture can be extended to multi-object tracking, instance segmentation, or 3D motion analysis, providing a foundation for PhD-level research in medical computer vision.
+# Key Features
+ # Real-time tracking using model.track() with persistent IDs
+ # Automatic frame extraction for key detections
+ # mAP, PR, and F1 evaluation via YOLO metrics
+ # Exportable reports for publication or medical validation
+ # Fully compatible with Google Colab + Drive workflows
