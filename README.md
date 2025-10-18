@@ -10,3 +10,11 @@ Model training using YOLOv11n with fine-tuned augmentations
 Validation and quantitative evaluation (mAP, Precision, Recall, F1)
 Real-time object tracking on medical videos
 Saving results (annotated frames + output video in /report/)
+# Technical Pipeline
+  # Load the trained model
+    model = YOLO("best.pt")
+  # Evaluate performance
+   val_metrics = model.val(data="data.yaml", imgsz=640, batch=32, conf=0.001, plots=True)
+  # Run object tracking on video
+   results = model.track(frame, persist=True, conf=0.8)
+
