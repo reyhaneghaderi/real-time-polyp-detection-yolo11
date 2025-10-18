@@ -42,9 +42,28 @@ Support endoscopic anomaly detection
 Assist radiologists in visual quality assurance
 Enable explainable AI in healthcare imaging pipelines
 The architecture can be extended to multi-object tracking, instance segmentation, or 3D motion analysis, providing a foundation for PhD-level research in medical computer vision.
+
+# Future Extensions
+Add explainability (Grad-CAM, LIME) for medical transparency
+Extend to multi-class, multi-object medical datasets
+Deploy with Flask or Streamlit for interactive demos
+Integrate Federated Learning for privacy-preserving model training
 # Key Features
  # Real-time tracking using model.track() with persistent IDs
  # Automatic frame extraction for key detections
  # mAP, PR, and F1 evaluation via YOLO metrics
  # Exportable reports for publication or medical validation
  # Fully compatible with Google Colab + Drive workflows
+ # Author
+Reyhaneh Ghaderi Chermahini
+Master’s Student in Stochastic and Data Science, University of Turin
+Contact: LinkedIn:www.linkedin.com/in/reyhanehghaderi     
+# Citation / Reference
+if this repository inspires your research or project, please cite:
+@project{ghaderi2025_yolo11_tracking,
+  title={YOLOv11 Real-Time Object Tracking for Medical Video Analysis},
+  author={Reyhaneh Ghaderi Chermahini},
+  year={2025},
+  repository={github.com/reyhaneghaderi/yolo11-tracking}
+}
+
